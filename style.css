@@ -1,0 +1,131 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: linear-gradient(MidnightBlue, MediumAquamarine);
+  background-color: MidnightBlue;
+  background-attachment: fixed;
+  font-family: 'Anonymous Pro';
+  color: gold;
+  font-size: 20px;
+}
+
+.caption{
+  color: black;
+  font-size: 10px;
+  text-align: right;
+  margin-top: -50px; /*"cheating" it to look like it goes with the picture more*/
+  margin-bottom: 50px; /*spacing from "wow show stopper pic" and the actual website*/
+}
+
+/* nav related tags */
+nav ul {
+  /*removes the bullet points from the list*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+nav li {
+  display: inline;
+  padding: 10px;
+  line-height: 12vmax;
+  text-shadow:5px 5px rgba(0,0,0,.7);
+  /* float: right; */
+}
+
+
+/* header related tags */
+.header {
+  font-weight: normal;
+  color: White;
+  padding-top: 10px;
+  margin-left: 2vmax;
+  margin-bottom: 50px;
+  /* below is for the header to follow the scroll and stay stuck on top */
+  position: sticky;
+  top: 0;
+}
+.header h1 {
+  font-family: 'Major Mono Display'; /*google font family*/
+  font-size: 5vmax;
+  font-weight: normal;
+  text-shadow:5px 5px rgba(0,0,0,.7);
+  /*float was acting weird so i'm cheating it to line up with the nav*/
+  margin-top: -11vmax;
+}
+
+/* sidebar related tags */
+.sidebar {
+  width: 27vmax;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  /*aligned the aside section to be on the right */
+  margin-left: 2vmax;
+}
+.sidebar img {
+  max-width: 25vmax;
+  display: flex;
+  padding: 10px;
+  margin: 0px;
+}
+
+/* main section related tags */
+.faq{
+  margin: 0px;
+  margin-left: 2vmax;
+  margin-right: 2vmax;
+  line-height: 40px;
+}
+.faq p{
+  margin-left: 4vmax;
+  margin-right: 2vmax;
+  line-height: 40px;
+}
+.main p {
+  margin: 0px;
+  margin-left: 2vmax;
+  margin-right: 2vmax;
+  line-height: 40px;
+}
+.gallery{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery img{
+  margin: 10px;
+  width: 25%;
+  height: 25%;
+}
+
+/* link related tags */
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:hover {
+  color: DarkOrange;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: DarkOrange;
+  background-color: transparent;
+  text-decoration: underline;
